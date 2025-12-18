@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;   
+    font-family: Roboto, Arial, sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+.sidebar {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+    top: 64.5px;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: rgb(235, 233, 233);
+    
+}
+.home-icon, .explore-icon ,.subscription-icon,.original-icon,.music-icon,.library-icon {
+    width: 25px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.home-icon:hover, .explore-icon:hover,.subscription-icon:hover,.original-icon:hover,.music-icon:hover,.library-icon:hover {
+    background-color: rgb(240, 240, 240);
+}
+.main-content {
+    padding-top: 90px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 5px;
+    row-gap: 15px;
+    margin-right: 6px;
+}
+.content-1 {
+    width: 320px;
+    position: relative;
+}
+.thumbnail-1 {
+    cursor: pointer;
+}
+.thumbnail-1 img{
+    width: 330px;
+    height: 400;
+    height: 180px;
+}
+.description {
+    display: grid;
+    grid-template-columns: 50px 250px;
+}
+.channel-1 {
+    display: flex;
+    margin-top: 4px;
+}
+.channel-1 img {
+    margin-top: 5px;
+    width: 36px;
+    height: 37px;
+    border-radius: 20px;
+}
+.title {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Roboto, Arial, sans-serif;
+
+}
+.author,.status {
+    margin: 0px;
+    color: grey;
+    font-size: 12px;
+}
+.time {
+    position: absolute;
+    top:160px;
+    right: -3px;
+    height: 15px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 12px;
+    border-radius: 2px;
+    z-index: 98;
+    font-family: Roboto, Arial;
+}
